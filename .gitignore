@@ -1,0 +1,18 @@
+
+# Dependencies
+node_modules/
+
+# Temporary files
+temp/
+test-results/
+playwright-report/
+
+# Reports (generated artifacts)
+reports/
+
+# System
+.DS_Store
+thumbs.db
+
+# Environment variables
+.env

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCAG Test Agent</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>WCAG Test Agent</h1>
+            <p>Automated Accessibility Compliance Testing</p>
+        </header>
+
+        <main>
+            <div class="card input-section">
+                <input type="url" id="urlInput" placeholder="Enter website URL (e.g., https://example.com)" required>
+                <div class="options-row">
+                    <label for="limitInput" style="color: var(--text-muted);">Max Pages:</label>
+                    <input type="number" id="limitInput" value="10" min="1" max="50" style="width: 80px;">
+                </div>
+                <button id="scanBtn">Start Scan</button>
+            </div>
+
+            <div id="statusSection" class="card status-section hidden">
+                <h3>Status: <span id="statusText">Idle</span></h3>
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+                <p id="detailsText" class="details"></p>
+            </div>
+
+            <div id="resultSection" class="card result-section hidden">
+                <h3>Scan Completed</h3>
+                <a id="reportLink" href="#" target="_blank" class="btn-primary">View Full Report</a>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
