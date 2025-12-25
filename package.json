@@ -5,7 +5,8 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "build": "./render-build.sh"
   },
   "keywords": [
     "wcag",
@@ -19,10 +20,10 @@
     "@axe-core/playwright": "^4.10.1",
     "cheerio": "^1.0.0",
     "express": "^4.21.2",
-    "playwright": "^1.50.0",
+    "playwright": "^1.57.0",
     "uuid": "^11.0.5"
   },
   "devDependencies": {
-    "@playwright/test": "^1.50.0"
+    "@playwright/test": "^1.57.0"
   }
 }
